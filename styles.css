@@ -1,4 +1,4 @@
-* {
+body, html {
   margin: 0;
   padding: 0;
 }
@@ -6,9 +6,20 @@
 .hero {
   height: 100vh;
   width: 100vw;
-  background-image: url("mountains.webp");
+  background-image: url("hydro.webp");
   background-size: cover;
   background-color: rgb(80, 87, 87);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+}
+
+.frosting-background {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  padding: 10vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
