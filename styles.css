@@ -122,25 +122,51 @@ a:hover, a:active {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
   background-color: white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 .form .form-section h1 {
   font-family: "Macondo Swash Caps", cursive;
+  text-align: center;
 }
 .form .form-section form {
-  background-color: #87afaf;
   border-radius: 4px;
   margin-bottom: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 2rem;
 }
 .form .form-section form .pair {
-  margin: 8px;
+  margin: 0;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-.form .form-section form .login-section button {
+.form .form-section form .pair label {
+  margin-bottom: 4px;
+  align-self: flex-start;
+}
+.form .form-section form .pair input {
+  width: 70%;
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+.form .form-section form .pair input:focus {
+  box-shadow: 2px 2px 2px 2px 100px #87afaf;
+}
+.form .form-section form .login-section {
+  margin: 0 10vw;
+}
+.form .form-section form .login-section input[type=submit] {
   margin: 16px;
-  padding: 4px;
-  background: white;
+  padding: 8px;
+  background: #87afaf;
   color: black;
   font-family: "Macondo Swash Caps", cursive;
   font-size: 1.5rem;
@@ -150,6 +176,9 @@ a:hover, a:active {
 .form .form-section form .login-section p {
   margin: -8px 8px 32px 16px;
   padding: 4px;
+}
+.form .form-section form .login-section p a {
+  color: rgb(67, 121, 128);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -47,44 +47,36 @@
         <h1>Join the club!</h1>
         <!--form stuff-->
         <form action="post">
-          <div class="pair">
-            <label for="firstname">FIRST NAME</label>
-            <br>
-            <input type="text" id="firstname">
-            <br>
+          <div class="left">
+            <div class="pair">
+              <label for="firstname">FIRST NAME</label>
+              <input type="text" id="firstname" tabindex="1">
+            </div>
+            <div class="pair">
+              <label for="email">EMAIL</label>
+              <input type="text" id="email" tabindex="3">
+            </div>
+            <div class="pair">
+              <label for="password">PASSWORD</label>
+              <input type="text" id="password" tabindex="5">
+            </div>
           </div>
-          <div class="pair">
-            <label for="lastname">LAST NAME</label>
-            <br>
-            <input type="text" id="lastname">
-            <br>
-          </div>
-          <div class="pair">
-            <label for="email">EMAIL</label>
-            <br>
-            <input type="text" id="email">
-            <br>
-          </div>
-          <div class="pair">
-            <label for="phone">PHONE</label>
-            <br>
-            <input type="text" id="phone">
-            <br>
-          </div>
-          <div class="pair">
-            <label for="password">PASSWORD</label>
-            <br>
-            <input type="text" id="password">
-            <br>
-          </div>
-          <div class="pair">
-            <label for="confirm">CONFIRM PASSWORD</label>
-            <br>
-            <input type="text" id="confirm">
-            <br>
+          <div class="right">
+            <div class="pair">
+              <label for="lastname">LAST NAME</label>
+              <input type="text" id="lastname" tabindex="2">
+            </div>
+            <div class="pair">
+              <label for="phone">PHONE</label>
+              <input type="text" id="phone" tabindex="4">
+            </div>
+            <div class="pair">
+              <label for="confirm">CONFIRM PASSWORD</label>
+              <input type="text" id="confirm" tabindex="6">
+            </div>
           </div>
           <div class="login-section">
-            <button>Create Account</button>
+            <input type="submit" value="Create Account">
             <p>Already have an account? <a href="#">Log in</a></p>
           </div>
         </form>

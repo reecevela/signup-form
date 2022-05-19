@@ -109,24 +109,45 @@ a:hover, a:active {
     font-weight: bold;
   }
   .form-section {
-    @include flex-style(column, flex-start, center);
+    @include flex-style(column, flex-start, stretch);
     background-color: white;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     h1 {
       font-family: 'Macondo Swash Caps', cursive;
+      text-align: center;
     }
     form {
-      background-color: #87afaf;
       border-radius: 4px;
       margin-bottom: 64px;
+      @include flex-style(row, space-around, center);
+      flex-flow: row wrap;
+      padding: 2rem;;
       .pair {
-        margin: 8px;
+        margin: 0;
+        min-width: 300px;
+        @include flex-style(column, flex-start, center);
+        label {
+          //margin-left: 10vw;
+          margin-bottom: 4px;
+          align-self: flex-start;
+        }
+        input {
+          width: 70%;
+          //margin-left: 10vw;
+          margin-bottom: 16px;
+          align-self: flex-start;
+        }
+        input:focus {
+          box-shadow:  2px 2px 2px 2px 100px #87afaf;
+          //border: 4px solid #87afaf;
+        }
       }
       .login-section {
-        button {
+        margin: 0 10vw;
+        input[type=submit] {
           margin: 16px;
-          padding: 4px;
-          background: white;
+          padding: 8px;
+          background: #87afaf;
           color: black;
           font-family: 'Macondo Swash Caps', cursive;
           font-size: 1.5rem;
@@ -136,6 +157,9 @@ a:hover, a:active {
         p {
           margin: -8px 8px 32px 16px;;
           padding: 4px;
+          a {
+            color:rgb(67, 121, 128);
+          }
         }
       }
     }
