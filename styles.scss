@@ -36,24 +36,24 @@ header {
       li {
         list-style-type: none;
         margin: 8px;
-        a {
-          padding: 0.5rem;
-  
-        }
-        a:visited, a:link {
-          color: white;
-        }
-        a:hover, a:active {
-          color: #4fc5fc;
-        }
       }
     }
   }
 }
 
+a {
+  padding: 0.5rem;
+
+}
+a:visited, a:link {
+  color: white;
+}
+a:hover, a:active {
+  color: #4fc5fc;
+}
 
 .hero {
-  height: 80vh;
+  height: 90vh;
   width: 100vw;
   background-image: url('mountains.webp');
   background-size: cover;
@@ -80,15 +80,15 @@ header {
   @include flex-style(column, flex-start, stretch);
   margin: 0;
   padding: 0;
+  background-color: #87afaf;
   .message-section {
     padding: 16px;
-    background-color: #f9fafb;
     font-weight: bold;
   }
   .form-section {
     @include flex-style(column, flex-start, center);
     background-color: white;
-    box-shadow: 0 4px 2px black;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     h1 {
       font-family: 'Macondo Swash Caps', cursive;
     }
@@ -96,6 +96,22 @@ header {
       .pair {
         margin: 8px;
       }
+    }
+  }
+  .login-section {
+    button {
+      margin: 16px;
+      padding: 4px;
+      background: white;
+      color: black;
+      font-family: 'Macondo Swash Caps', cursive;
+      font-size: 1.5rem;
+      border-radius: 8px;
+      border: 2px solid white;
+    }
+    p {
+      margin: -8px 8px 32px 16px;;
+      padding: 4px;
     }
   }
 }

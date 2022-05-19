@@ -38,18 +38,21 @@ header nav ul li {
   list-style-type: none;
   margin: 8px;
 }
-header nav ul li a {
+
+a {
   padding: 0.5rem;
 }
-header nav ul li a:visited, header nav ul li a:link {
+
+a:visited, a:link {
   color: white;
 }
-header nav ul li a:hover, header nav ul li a:active {
+
+a:hover, a:active {
   color: #4fc5fc;
 }
 
 .hero {
-  height: 80vh;
+  height: 90vh;
   width: 100vw;
   background-image: url("mountains.webp");
   background-size: cover;
@@ -79,10 +82,10 @@ header nav ul li a:hover, header nav ul li a:active {
   align-items: stretch;
   margin: 0;
   padding: 0;
+  background-color: #87afaf;
 }
 .form .message-section {
   padding: 16px;
-  background-color: #f9fafb;
   font-weight: bold;
 }
 .form .form-section {
@@ -91,13 +94,27 @@ header nav ul li a:hover, header nav ul li a:active {
   justify-content: flex-start;
   align-items: center;
   background-color: white;
-  box-shadow: 0 4px 2px black;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 .form .form-section h1 {
   font-family: "Macondo Swash Caps", cursive;
 }
 .form .form-section form .pair {
   margin: 8px;
+}
+.form .login-section button {
+  margin: 16px;
+  padding: 4px;
+  background: white;
+  color: black;
+  font-family: "Macondo Swash Caps", cursive;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+.form .login-section p {
+  margin: -8px 8px 32px 16px;
+  padding: 4px;
 }
 
 /*# sourceMappingURL=styles.css.map */
