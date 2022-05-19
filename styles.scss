@@ -93,25 +93,28 @@ a:hover, a:active {
       font-family: 'Macondo Swash Caps', cursive;
     }
     form {
+      background-color: #87afaf;
+      border-radius: 4px;
+      margin-bottom: 64px;
       .pair {
         margin: 8px;
       }
-    }
-  }
-  .login-section {
-    button {
-      margin: 16px;
-      padding: 4px;
-      background: white;
-      color: black;
-      font-family: 'Macondo Swash Caps', cursive;
-      font-size: 1.5rem;
-      border-radius: 8px;
-      border: 2px solid white;
-    }
-    p {
-      margin: -8px 8px 32px 16px;;
-      padding: 4px;
+      .login-section {
+        button {
+          margin: 16px;
+          padding: 4px;
+          background: white;
+          color: black;
+          font-family: 'Macondo Swash Caps', cursive;
+          font-size: 1.5rem;
+          border-radius: 8px;
+          border: 2px solid white;
+        }
+        p {
+          margin: -8px 8px 32px 16px;;
+          padding: 4px;
+        }
+      }
     }
   }
 }

@@ -99,10 +99,15 @@ a:hover, a:active {
 .form .form-section h1 {
   font-family: "Macondo Swash Caps", cursive;
 }
+.form .form-section form {
+  background-color: #87afaf;
+  border-radius: 4px;
+  margin-bottom: 64px;
+}
 .form .form-section form .pair {
   margin: 8px;
 }
-.form .login-section button {
+.form .form-section form .login-section button {
   margin: 16px;
   padding: 4px;
   background: white;
@@ -112,7 +117,7 @@ a:hover, a:active {
   border-radius: 8px;
   border: 2px solid white;
 }
-.form .login-section p {
+.form .form-section form .login-section p {
   margin: -8px 8px 32px 16px;
   padding: 4px;
 }
