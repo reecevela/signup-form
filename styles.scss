@@ -8,14 +8,27 @@ $accent-color: #2a3c46;
   align-items: $a;
 }
 
+.text-wrapper-600 {
+  max-width: 600px;
+}
+
 html {
   background-color: $accent-color;
   scroll-behavior: smooth;
   font-family: cursive, sans-serif;
+  //overflow-x: hidden!important;
   body {
     margin: 0;
     padding: 0;
-    @include flex-style(column, flex-start, stretch)
+    @include flex-style(column, flex-start, center);
+    .main {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      @media (min-width: 1080px) {
+        @include flex-style(row, flex-start, stretch);
+      }
+    }
   }
 }
 
@@ -25,14 +38,16 @@ html {
 }
 
 header {
-  @include flex-style(row, space-between);
-  width: 100vw;
+  @include flex-style(row, space-around, center);
+  //width: 100%;
+  margin: 0;
+  padding: 0px;
   height: fit-content;
   background: linear-gradient(342deg, rgb(13, 22, 26) 0%, rgb(67, 121, 128) 100%);
   align-self: stretch;
   nav {
     ul {
-      @include flex-style(row, space-between);
+      @include flex-style(row, space-around);
       li {
         list-style-type: none;
         margin: 8px;
@@ -54,7 +69,8 @@ a:hover, a:active {
 
 .hero {
   height: 90vh;
-  width: 100vw;
+  width: 100%;
+  margin: 0;
   background-image: url('mountains.webp');
   background-size: cover;
   background-position: center;
@@ -67,6 +83,9 @@ a:hover, a:active {
   justify-content: center;
   align-items: stretch;
   text-align: center;
+  @media (min-width: 1080px) {
+    width: 40vw;
+  }
   .frosting-background {
     position: sticky;
     top: 0;
@@ -80,8 +99,12 @@ a:hover, a:active {
   @include flex-style(column, flex-start, stretch);
   margin: 0;
   padding: 0;
-  background-color: #87afaf;
+  background-color: #1c3237;
+  @media (min-width: 1080px) {
+    width: 60vw;
+  }
   .message-section {
+    color: white;
     padding: 16px;
     font-weight: bold;
   }

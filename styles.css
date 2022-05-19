@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Macondo&family=Macondo+Swash+Caps&family=Quicksand&display=swap");
+.text-wrapper-600 {
+  max-width: 600px;
+}
+
 html {
   background-color: #2a3c46;
   scroll-behavior: smooth;
@@ -10,7 +14,20 @@ html body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: center;
+}
+html body .main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+@media (min-width: 1080px) {
+  html body .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
 }
 
 .logo {
@@ -21,9 +38,10 @@ html body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 100vw;
+  margin: 0;
+  padding: 0px;
   height: fit-content;
   background: linear-gradient(342deg, rgb(13, 22, 26) 0%, rgb(67, 121, 128) 100%);
   align-self: stretch;
@@ -31,7 +49,7 @@ header {
 header nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 header nav ul li {
@@ -53,7 +71,8 @@ a:hover, a:active {
 
 .hero {
   height: 90vh;
-  width: 100vw;
+  width: 100%;
+  margin: 0;
   background-image: url("mountains.webp");
   background-size: cover;
   background-position: center;
@@ -66,6 +85,11 @@ a:hover, a:active {
   justify-content: center;
   align-items: stretch;
   text-align: center;
+}
+@media (min-width: 1080px) {
+  .hero {
+    width: 40vw;
+  }
 }
 .hero .frosting-background {
   position: sticky;
@@ -82,9 +106,15 @@ a:hover, a:active {
   align-items: stretch;
   margin: 0;
   padding: 0;
-  background-color: #87afaf;
+  background-color: #1c3237;
+}
+@media (min-width: 1080px) {
+  .form {
+    width: 60vw;
+  }
 }
 .form .message-section {
+  color: white;
   padding: 16px;
   font-weight: bold;
 }
