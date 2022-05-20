@@ -9,7 +9,7 @@ $accent-color: #2a3c46;
 }
 
 .text-wrapper-600 {
-  max-width: 600px;
+  max-width: 450px;
 }
 
 html {
@@ -125,26 +125,22 @@ a:hover, a:active {
       .pair {
         margin: 0;
         min-width: 300px;
-        @include flex-style(column, flex-start, center);
+        @include flex-style(column, flex-start, flex-start);
         label {
-          //margin-left: 10vw;
           margin-bottom: 4px;
-          align-self: flex-start;
         }
         input {
           width: 70%;
-          //margin-left: 10vw;
           margin-bottom: 16px;
-          align-self: flex-start;
         }
         input:focus {
           box-shadow:  2px 2px 2px 2px 100px #87afaf;
-          //border: 4px solid #87afaf;
         }
       }
       .login-section {
         margin: 0 10vw;
-        input[type=submit] {
+        @include flex-style(column, center, center);
+        input[type=button] {
           margin: 16px;
           padding: 8px;
           background: #87afaf;
@@ -153,6 +149,9 @@ a:hover, a:active {
           font-size: 1.5rem;
           border-radius: 8px;
           border: 2px solid white;
+        }
+        input[type=button]:hover {
+          padding: 8px 12px;
         }
         p {
           margin: -8px 8px 32px 16px;;
